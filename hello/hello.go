@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Println("Hello World, Lucas!")
+	name := "Lucas"
+	age := time.Now().Year() - 1990
+	version := 1.1
+
+	fmt.Printf("Hello World, %s, %d\n", name, age)
+	fmt.Println("This is version", version)
 }
